@@ -14,31 +14,3 @@
 * IRC: `#confd` on Freenode
 * Mailing list: [Google Groups](https://groups.google.com/forum/#!forum/confd-users)
 * Website: [www.confd.io](http://www.confd.io)
-
-## Building
-
-Go 1.10 is required to build confd, which uses the new vendor directory.
-
-```
-$ mkdir -p $GOPATH/src/github.com/kelseyhightower
-$ git clone https://github.com/kelseyhightower/confd.git $GOPATH/src/github.com/kelseyhightower/confd
-$ cd $GOPATH/src/github.com/kelseyhightower/confd
-$ make
-```
-
-You should now have confd in your `bin/` directory:
-
-```
-$ ls bin/
-confd
-```
-
-## Getting Started
-
-Before we begin be sure to [download and install confd](docs/installation.md).
-
-* [quick start guide](docs/quick-start-guide.md)
-
-## Next steps
-
-Check out the [docs directory](docs) for more docs.

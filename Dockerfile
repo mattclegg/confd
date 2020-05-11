@@ -20,10 +20,10 @@ RUN apk add --no-cache \
 FROM alpine:latest
 
 LABEL org.label-schema.name="confd" \
-        org.label-schema.vendor="Mattclegg" \
-        org.label-schema.description="Docker confd, built on Alpine Linux. confd is a lightweight configuration management tool." \
-        org.label-schema.vcs-url="https://github.com/mattclegg/confd" \
-        org.label-schema.version="alpine" \
-        org.label-schema.license="MIT"
+    org.label-schema.vendor="Mattclegg" \
+    org.label-schema.description="Docker confd, built on Alpine Linux. confd is a lightweight configuration management tool." \
+    org.label-schema.vcs-url="https://github.com/mattclegg/confd" \
+    org.label-schema.version="alpine" \
+    org.label-schema.license="MIT"
 
 COPY --from=builder /app/bin/confd /bin/
